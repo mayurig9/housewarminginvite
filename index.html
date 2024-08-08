@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housewarming Party</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .container {
+            text-align: center;
+            padding: 2%;
+            box-sizing: border-box;
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better card feel */
+            border-radius: 10px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow for card effect */
+            border: 1px solid #ddd; /* Adding a light border */
+        }
+        h1, h2, h4 {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #4CAF50;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 5%;
+            font-size: 2em;
+        }
+        h2 {
+            color: #4CAF50;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 2%;
+            font-size: 1.5em;
+        }
+        h4 {
+            color: #a429af;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            padding-top: 3%;
+        }
+        button {
+            background: #4CAF50;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        p {
+            color: #333;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 1.1em;
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .details div {
+            text-align: center;
+            margin: 0.5rem 0;
+        }
+        .details p {
+            margin: 0.5rem 0;
+        }
+        .details h3 {
+            font-family: 'Comic Sans MS', 'Comic Sans';
+            color: #be0505;
+            font-size: 1.2em;
+        }
+
+        @media (min-width: 768px) {
+            .details {
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            .details div {
+                text-align: center;
+                margin: 0 2rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            h4 {
+                font-size: 1em;
+            }
+            .details h3 {
+                font-size: 1em;
+            }
+            .details p {
+                font-size: 0.9em;
+            }
+            button {
+                font-size: 0.9em;
+                padding: 0.5rem 1rem;
+            }
+            .container {
+                padding: 5%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            h4 {
+                font-size: 0.9em;
+            }
+            .details h3 {
+                font-size: 0.9em;
+            }
+            .details p {
+                font-size: 0.8em;
+            }
+            button {
+                font-size: 0.8em;
+                padding: 0.5rem;
+            }
+            .container {
+                padding: 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>You're invited to join us for a</h2>
+        <h1>HOUSEWARMING PARTY!</h1>
+        <p>We are over the moon to share that we have finally settled into our new home!</p>
+        <p>To celebrate this milestone, we would love for you to join us for a housewarming party. Your presence will add to the warmth of our new place.</p>
+        <p>Looking forward to seeing you and creating wonderful memories together in our new abode!</p>
+        <h4>Hosted By : Mayuri & Vishal</h4>
+
+        <div class="details">
+            <div>
+                <h3><strong>When:</strong></h3>
+                <p>Sunday, August 25, 2024</p>
+                <p>12:00 PM PT</p>
+            </div>
+            <div>
+                <h3><strong>Where:</strong></h3>
+                <p>10885 McPeak Ln</p>
+                <p>Dublin, CA</p>
+                <br/>
+            </div>
+        </div>        
+        <button onclick="window.location.href='rsvp.html'">RSVP</button>
+    </div>
+</body>
+</html>
